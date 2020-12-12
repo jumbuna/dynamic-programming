@@ -18,10 +18,11 @@ unsigned long gridTraveller(int rows, int columns) {
     return /*bottom*/ gridTraveller(rows - 1, columns) + /* right*/ gridTraveller(rows, columns - 1);
 }
 
+char arr[10];
+
 char *rowCommaColumn(int rows, int columns) {
-    char tmp[10];
-    sprintf(tmp, "%i,%i", rows, columns);
-    return tmp;
+    sprintf(arr, "%i,%i", rows, columns);
+    return arr;
 }
 
 /* time:  space: */
@@ -36,8 +37,8 @@ unsigned long gridTravellerWithMemoizationObject(int rows, int columns, memo_t *
     if (rows + columns == 2) return 1;
     memo_t *newMemo = calloc(1, sizeof(memo_t));
     memo_t *newMemo2 = calloc(1, sizeof(memo_t));
-    memccpy(newMemo->rowCommaColumn, rowCommaColumn(rows, columns), 10, sizeof(char));
-    memccpy(newMemo2->rowCommaColumn, rowCommaColumn(columns, rows), 10, sizeof(char));
+    strcpy(newMemo->rowCommaColumn, rcc);
+    strcpy(newMemo2->rowCommaColumn, rowCommaColumn(columns, rows));
     newMemo2->value = newMemo->value = /*bottom*/ gridTravellerWithMemoizationObject(rows - 1, columns, memo) + /* right*/ gridTravellerWithMemoizationObject(rows, columns - 1, memo);
     HASH_ADD_STR(*memo, rowCommaColumn, newMemo);
     HASH_ADD_STR(*memo, rowCommaColumn, newMemo2);
@@ -64,6 +65,7 @@ void memoizedGridTravellerTests() {
     assert(memoizedGridTraveller(2, 3) == 3);
     assert(memoizedGridTraveller(3, 3) == 6);
     assert(memoizedGridTraveller(4, 4) == 20);
+    assert(memoizedGridTraveller(18, 18) == 2333606220);
     printf("All memoized grid traveller Tests passed \n");
 }
 
@@ -71,5 +73,4 @@ void memoizedGridTravellerTests() {
 int main() {
     gridTravellerTests();
     memoizedGridTravellerTests();
-    printf("%lu", memoizedGridTraveller(18, 18));
 }
