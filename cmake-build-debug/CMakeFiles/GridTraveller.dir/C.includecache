@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jumbuna/CLionProjects/DynamicProgramming/gridTraveller.c
+include/uthash.h
+/Users/jumbuna/CLionProjects/DynamicProgramming/include/uthash.h
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/Users/jumbuna/CLionProjects/DynamicProgramming/include/uthash.h
+string.h
+-
+stddef.h
+-
+stdlib.h
+-
+stdint.h
+-
+stdint.h
+-
+stdint.h
+-
+stdio.h
+-
+

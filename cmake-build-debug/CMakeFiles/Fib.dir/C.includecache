@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jumbuna/CLionProjects/DynamicProgramming/fibonucci.c
+/Users/jumbuna/Desktop/uthash-master/include/uthash.h
+-
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/Users/jumbuna/Desktop/uthash-master/include/uthash.h
+string.h
+-
+stddef.h
+-
+stdlib.h
+-
+stdint.h
+-
+stdint.h
+-
+stdint.h
+-
+stdio.h
+-
+
