@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named isThereAwayTogenerateTargetSumFromGivenArray
+
+# Build rule for target.
+isThereAwayTogenerateTargetSumFromGivenArray: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 isThereAwayTogenerateTargetSumFromGivenArray
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray
+
+# fast build rule for target.
+isThereAwayTogenerateTargetSumFromGivenArray/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray/fast
+
+#=============================================================================
 # Target rules for targets named GridTraveller
 
 # Build rule for target.
@@ -210,6 +223,33 @@ gridTraveller.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GridTraveller.dir/build.make CMakeFiles/GridTraveller.dir/gridTraveller.c.s
 .PHONY : gridTraveller.c.s
 
+isThereAwayTogenerateTargetSumFromGivenArray.o: isThereAwayTogenerateTargetSumFromGivenArray.c.o
+
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray.o
+
+# target to build an object file
+isThereAwayTogenerateTargetSumFromGivenArray.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/isThereAwayTogenerateTargetSumFromGivenArray.c.o
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray.c.o
+
+isThereAwayTogenerateTargetSumFromGivenArray.i: isThereAwayTogenerateTargetSumFromGivenArray.c.i
+
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray.i
+
+# target to preprocess a source file
+isThereAwayTogenerateTargetSumFromGivenArray.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/isThereAwayTogenerateTargetSumFromGivenArray.c.i
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray.c.i
+
+isThereAwayTogenerateTargetSumFromGivenArray.s: isThereAwayTogenerateTargetSumFromGivenArray.c.s
+
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray.s
+
+# target to generate assembly for a file
+isThereAwayTogenerateTargetSumFromGivenArray.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/isThereAwayTogenerateTargetSumFromGivenArray.c.s
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,12 +260,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Fib"
 	@echo "... GridTraveller"
+	@echo "... isThereAwayTogenerateTargetSumFromGivenArray"
 	@echo "... fibonucci.o"
 	@echo "... fibonucci.i"
 	@echo "... fibonucci.s"
 	@echo "... gridTraveller.o"
 	@echo "... gridTraveller.i"
 	@echo "... gridTraveller.s"
+	@echo "... isThereAwayTogenerateTargetSumFromGivenArray.o"
+	@echo "... isThereAwayTogenerateTargetSumFromGivenArray.i"
+	@echo "... isThereAwayTogenerateTargetSumFromGivenArray.s"
 .PHONY : help
 
 

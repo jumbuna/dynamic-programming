@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-d
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/all
 all: CMakeFiles/GridTraveller.dir/all
 all: CMakeFiles/Fib.dir/all
 
@@ -84,10 +85,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/clean
 clean: CMakeFiles/GridTraveller.dir/clean
 clean: CMakeFiles/Fib.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir
+
+# All Build rule for target.
+CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target isThereAwayTogenerateTargetSumFromGivenArray"
+.PHONY : CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/rule
+
+# Convenience name for target.
+isThereAwayTogenerateTargetSumFromGivenArray: CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/rule
+
+.PHONY : isThereAwayTogenerateTargetSumFromGivenArray
+
+# clean rule for target.
+CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/clean
+.PHONY : CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/GridTraveller.dir

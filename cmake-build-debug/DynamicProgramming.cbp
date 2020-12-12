@@ -37,6 +37,46 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="isThereAwayTogenerateTargetSumFromGivenArray">
+				<Option output="/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/isThereAwayTogenerateTargetSumFromGivenArray" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 isThereAwayTogenerateTargetSumFromGivenArray"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="isThereAwayTogenerateTargetSumFromGivenArray/fast">
+				<Option output="/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/isThereAwayTogenerateTargetSumFromGivenArray" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 isThereAwayTogenerateTargetSumFromGivenArray/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="GridTraveller">
 				<Option output="/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/GridTraveller" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug"/>
@@ -126,6 +166,9 @@
 		</Unit>
 		<Unit filename="/Users/jumbuna/CLionProjects/DynamicProgramming/include/uthash.h">
 			<Option target="GridTraveller"/>
+		</Unit>
+		<Unit filename="/Users/jumbuna/CLionProjects/DynamicProgramming/isThereAwayTogenerateTargetSumFromGivenArray.c">
+			<Option target="isThereAwayTogenerateTargetSumFromGivenArray"/>
 		</Unit>
 		<Unit filename="/Users/jumbuna/CLionProjects/DynamicProgramming/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

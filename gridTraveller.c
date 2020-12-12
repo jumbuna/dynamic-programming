@@ -12,10 +12,15 @@ typedef struct MEMO {
 } memo_t;
 
 /* time: 2^(rows+columns) space: (rows+columns) */
-unsigned long gridTraveller(int rows, int columns) {
+unsigned long
+howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(int rows, int columns) {
     if (!rows || !columns) return 0;
     if (rows + columns == 2) return 1;
-    return /*bottom*/ gridTraveller(rows - 1, columns) + /* right*/ gridTraveller(rows, columns - 1);
+    return /*bottom*/
+            howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                    rows - 1, columns) + /* right*/
+           howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   rows, columns - 1);
 }
 
 char arr[10];
@@ -26,7 +31,8 @@ char *rowCommaColumn(int rows, int columns) {
 }
 
 /* time:  space: */
-unsigned long gridTravellerWithMemoizationObject(int rows, int columns, memo_t **memo) {
+unsigned long
+howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsWithMemoizationObject(int rows, int columns, memo_t **memo) {
     char *rcc = rowCommaColumn(rows, columns);
     memo_t *tmp;
     HASH_FIND_STR(*memo, rcc, tmp);
@@ -39,38 +45,54 @@ unsigned long gridTravellerWithMemoizationObject(int rows, int columns, memo_t *
     memo_t *newMemo2 = calloc(1, sizeof(memo_t));
     strcpy(newMemo->rowCommaColumn, rcc);
     strcpy(newMemo2->rowCommaColumn, rowCommaColumn(columns, rows));
-    newMemo2->value = newMemo->value = /*bottom*/ gridTravellerWithMemoizationObject(rows - 1, columns, memo) + /* right*/ gridTravellerWithMemoizationObject(rows, columns - 1, memo);
+    newMemo2->value = newMemo->value = /*bottom*/
+            howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsWithMemoizationObject(
+                    rows - 1, columns, memo) + /* right*/
+            howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsWithMemoizationObject(
+                    rows, columns - 1, memo);
     HASH_ADD_STR(*memo, rowCommaColumn, newMemo);
     HASH_ADD_STR(*memo, rowCommaColumn, newMemo2);
     return newMemo->value;
 }
 
-unsigned long memoizedGridTraveller(int rows, int columns) {
+unsigned long
+memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(int rows, int columns) {
     memo_t *memo = NULL;
-    return gridTravellerWithMemoizationObject(rows, columns, &memo);
+    return howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsWithMemoizationObject(
+            rows, columns, &memo);
 }
 
 
-void gridTravellerTests() {
-    assert(gridTraveller(1, 1) == 1);
-    assert(gridTraveller(0, 2) == 0);
-    assert(gridTraveller(2, 3) == 3);
-    assert(gridTraveller(3, 3) == 6);
+void howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsTests() {
+    assert(howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   1, 1) == 1);
+    assert(howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   0, 2) == 0);
+    assert(howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   2, 3) == 3);
+    assert(howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   3, 3) == 6);
     printf("All grid traveller Tests passed \n");
 }
 
-void memoizedGridTravellerTests() {
-    assert(memoizedGridTraveller(1, 1) == 1);
-    assert(memoizedGridTraveller(0, 2) == 0);
-    assert(memoizedGridTraveller(2, 3) == 3);
-    assert(memoizedGridTraveller(3, 3) == 6);
-    assert(memoizedGridTraveller(4, 4) == 20);
-    assert(memoizedGridTraveller(18, 18) == 2333606220);
+void memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsTests() {
+    assert(memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   1, 1) == 1);
+    assert(memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   0, 2) == 0);
+    assert(memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   2, 3) == 3);
+    assert(memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   3, 3) == 6);
+    assert(memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   4, 4) == 20);
+    assert(memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                   18, 18) == 2333606220);
     printf("All memoized grid traveller Tests passed \n");
 }
 
 
 int main() {
-    gridTravellerTests();
-    memoizedGridTravellerTests();
+    howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsTests();
+    memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsTests();
 }
