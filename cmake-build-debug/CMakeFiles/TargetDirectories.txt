@@ -1,4 +1,6 @@
 /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir
+/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir
 /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles/GridTraveller.dir
 /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles/Fib.dir

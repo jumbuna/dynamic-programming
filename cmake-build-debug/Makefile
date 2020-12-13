@@ -144,6 +144,19 @@ isThereAwayTogenerateTargetSumFromGivenArray/fast:
 .PHONY : isThereAwayTogenerateTargetSumFromGivenArray/fast
 
 #=============================================================================
+# Target rules for targets named howCanYouTheTargetSumBeGeneratedFromTheGivenArray
+
+# Build rule for target.
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 howCanYouTheTargetSumBeGeneratedFromTheGivenArray
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray
+
+# fast build rule for target.
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build.make CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray/fast
+
+#=============================================================================
 # Target rules for targets named GridTraveller
 
 # Build rule for target.
@@ -223,6 +236,36 @@ gridTraveller.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GridTraveller.dir/build.make CMakeFiles/GridTraveller.dir/gridTraveller.c.s
 .PHONY : gridTraveller.c.s
 
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray.o: howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.o
+
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray.o
+
+# target to build an object file
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build.make CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fib.dir/build.make CMakeFiles/Fib.dir/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.o
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.o
+
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray.i: howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.i
+
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray.i
+
+# target to preprocess a source file
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build.make CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fib.dir/build.make CMakeFiles/Fib.dir/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.i
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.i
+
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray.s: howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.s
+
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray.s
+
+# target to generate assembly for a file
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build.make CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fib.dir/build.make CMakeFiles/Fib.dir/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.s
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.s
+
 isThereAwayTogenerateTargetSumFromGivenArray.o: isThereAwayTogenerateTargetSumFromGivenArray.c.o
 
 .PHONY : isThereAwayTogenerateTargetSumFromGivenArray.o
@@ -260,6 +303,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Fib"
 	@echo "... GridTraveller"
+	@echo "... howCanYouTheTargetSumBeGeneratedFromTheGivenArray"
 	@echo "... isThereAwayTogenerateTargetSumFromGivenArray"
 	@echo "... fibonucci.o"
 	@echo "... fibonucci.i"
@@ -267,6 +311,9 @@ help:
 	@echo "... gridTraveller.o"
 	@echo "... gridTraveller.i"
 	@echo "... gridTraveller.s"
+	@echo "... howCanYouTheTargetSumBeGeneratedFromTheGivenArray.o"
+	@echo "... howCanYouTheTargetSumBeGeneratedFromTheGivenArray.i"
+	@echo "... howCanYouTheTargetSumBeGeneratedFromTheGivenArray.s"
 	@echo "... isThereAwayTogenerateTargetSumFromGivenArray.o"
 	@echo "... isThereAwayTogenerateTargetSumFromGivenArray.i"
 	@echo "... isThereAwayTogenerateTargetSumFromGivenArray.s"

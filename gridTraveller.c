@@ -13,14 +13,15 @@ typedef struct MEMO {
 
 /* time: 2^(rows+columns) space: (rows+columns) */
 unsigned long
-howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(int rows, int columns) {
+howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+        int rows, int columns) {
     if (!rows || !columns) return 0;
     if (rows + columns == 2) return 1;
     return /*bottom*/
             howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
                     rows - 1, columns) + /* right*/
-           howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
-                   rows, columns - 1);
+            howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+                    rows, columns - 1);
 }
 
 char arr[10];
@@ -32,13 +33,12 @@ char *rowCommaColumn(int rows, int columns) {
 
 /* time:  space: */
 unsigned long
-howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsWithMemoizationObject(int rows, int columns, memo_t **memo) {
+howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsWithMemoizationObject(
+        int rows, int columns, memo_t **memo) {
     char *rcc = rowCommaColumn(rows, columns);
     memo_t *tmp;
     HASH_FIND_STR(*memo, rcc, tmp);
-    if (tmp != NULL) {
-        return tmp->value;
-    }
+    if (tmp != NULL) { return tmp->value; }
     if (!rows || !columns) return 0;
     if (rows + columns == 2) return 1;
     memo_t *newMemo = calloc(1, sizeof(memo_t));
@@ -56,7 +56,8 @@ howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGiven
 }
 
 unsigned long
-memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(int rows, int columns) {
+memoizedHowManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensions(
+        int rows, int columns) {
     memo_t *memo = NULL;
     return howManyWaysAreThereToNavigateFromTopLeftCornerToBottomRightCornerInGridWithGivenDimensionsWithMemoizationObject(
             rows, columns, &memo);

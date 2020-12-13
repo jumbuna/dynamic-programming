@@ -74,6 +74,7 @@ CMAKE_BINARY_DIR = /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-d
 
 # The main recursive "all" target.
 all: CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/all
+all: CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/all
 all: CMakeFiles/GridTraveller.dir/all
 all: CMakeFiles/Fib.dir/all
 
@@ -86,6 +87,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/clean
+clean: CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/clean
 clean: CMakeFiles/GridTraveller.dir/clean
 clean: CMakeFiles/Fib.dir/clean
 
@@ -98,7 +100,7 @@ clean: CMakeFiles/Fib.dir/clean
 CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build.make CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target isThereAwayTogenerateTargetSumFromGivenArray"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target isThereAwayTogenerateTargetSumFromGivenArray"
 .PHONY : CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/all
 
 # Build rule for subdir invocation for target.
@@ -119,13 +121,40 @@ CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/clean:
 .PHONY : CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir
+
+# All Build rule for target.
+CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build.make CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build.make CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target howCanYouTheTargetSumBeGeneratedFromTheGivenArray"
+.PHONY : CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/rule
+
+# Convenience name for target.
+howCanYouTheTargetSumBeGeneratedFromTheGivenArray: CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/rule
+
+.PHONY : howCanYouTheTargetSumBeGeneratedFromTheGivenArray
+
+# clean rule for target.
+CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/build.make CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/clean
+.PHONY : CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/GridTraveller.dir
 
 # All Build rule for target.
 CMakeFiles/GridTraveller.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GridTraveller.dir/build.make CMakeFiles/GridTraveller.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GridTraveller.dir/build.make CMakeFiles/GridTraveller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target GridTraveller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target GridTraveller"
 .PHONY : CMakeFiles/GridTraveller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -152,12 +181,12 @@ CMakeFiles/GridTraveller.dir/clean:
 CMakeFiles/Fib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fib.dir/build.make CMakeFiles/Fib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fib.dir/build.make CMakeFiles/Fib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Fib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Fib"
 .PHONY : CMakeFiles/Fib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Fib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Fib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jumbuna/CLionProjects/DynamicProgramming/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Fib.dir/rule

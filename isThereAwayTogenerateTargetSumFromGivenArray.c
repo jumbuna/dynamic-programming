@@ -37,6 +37,11 @@ void *newMemoWithValues(long targetSum, bool value, memo_t **memo) {
     HASH_ADD(hh, *memo, key, sizeof (long), newMemo);
 }
 
+/* m = targetSum
+ * n = arraySize
+ * time: O(mn)
+ * space: O(m)
+ * */
 bool isThereAwayToGenerateTargetSumFromGivenArrayWithMemoizationObject(long targetSum,
                                                                        unsigned long *array,
                                                                        unsigned long arraySize,

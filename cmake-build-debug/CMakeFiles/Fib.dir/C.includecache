@@ -7,8 +7,8 @@
 #IncludeRegexTransform: 
 
 /Users/jumbuna/CLionProjects/DynamicProgramming/fibonucci.c
-/Users/jumbuna/Desktop/uthash-master/include/uthash.h
--
+include/uthash.h
+/Users/jumbuna/CLionProjects/DynamicProgramming/include/uthash.h
 assert.h
 -
 stdio.h
@@ -16,7 +16,7 @@ stdio.h
 stdlib.h
 -
 
-/Users/jumbuna/Desktop/uthash-master/include/uthash.h
+/Users/jumbuna/CLionProjects/DynamicProgramming/include/uthash.h
 string.h
 -
 stddef.h
@@ -28,6 +28,16 @@ stdint.h
 stdint.h
 -
 stdint.h
+-
+stdio.h
+-
+
+/Users/jumbuna/CLionProjects/DynamicProgramming/isThereAwayTogenerateTargetSumFromGivenArray.c
+include/uthash.h
+/Users/jumbuna/CLionProjects/DynamicProgramming/include/uthash.h
+assert.h
+-
+stdbool.h
 -
 stdio.h
 -

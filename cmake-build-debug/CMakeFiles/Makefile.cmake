@@ -47,6 +47,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/isThereAwayTogenerateTargetSumFromGivenArray.dir/DependInfo.cmake"
+  "CMakeFiles/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.dir/DependInfo.cmake"
   "CMakeFiles/GridTraveller.dir/DependInfo.cmake"
   "CMakeFiles/Fib.dir/DependInfo.cmake"
   )

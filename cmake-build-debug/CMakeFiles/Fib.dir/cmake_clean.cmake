@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Fib.dir/fibonucci.c.o"
+  "CMakeFiles/Fib.dir/howCanYouTheTargetSumBeGeneratedFromTheGivenArray.c.o"
   "Fib"
   "Fib.pdb"
 )
